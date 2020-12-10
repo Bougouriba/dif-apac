@@ -43,5 +43,5 @@ jobs:
           mv jekyll-site/_site docs;
           git add docs;
           git commit -m "jekyll build from Action ${GITHUB_SHA}";
-          git push --force $remote_repo $remote_branch;
+          git push --force $remote_repo setup:$remote_branch;
           rm -fr .git;

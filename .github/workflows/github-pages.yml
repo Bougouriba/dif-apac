@@ -19,7 +19,9 @@ jobs:
             ${{ runner.os }}-gems-
       - run:
           sudo gem install csv2json json2yaml bundler;
+          echo "Running Update!"; 
           ./update.sh;
+          echo "Done Running Update!"; 
           cd docs-src;
           bundle install;
           echo "Installed!"; 

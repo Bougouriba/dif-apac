@@ -4,7 +4,8 @@ title: Companies
 sidebar:
   nav: companies
 ---
-{% for company in site.data.Companies | sort: 'Name' %}
+{% assign companies = site.data.Companies | sort: 'Name' %}
+{% for company in companies %}
   * {{ company.Name }}
 {% endfor %}
 

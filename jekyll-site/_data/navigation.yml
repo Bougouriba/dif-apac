@@ -1,12 +1,12 @@
 # did info links
 
-download:
-  - title: "Reports (ZIP)"
-    url: /_pages/download/reports/
-  - title: "Images"
-    url: /_pages/download/images/
-  - title: "DataSets (ZIP)"
-    url: /_pages/download/datasets/
+home:
+  - title: "About"
+    url: /_pages/home/about/
+  - title: "Meeting Schedule"
+    url: /_pages/home/schedule/
+  - title: "Participate"
+    url: /_pages/home/participate/
 
 # main links
 main:

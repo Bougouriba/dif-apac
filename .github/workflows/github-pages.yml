@@ -18,7 +18,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - run:
-          sudo gem install csv2json json2yaml bundle;
+          sudo gem install csv2json json2yaml bundler;
           ./update.sh;
           cd docs-src;
           bundle install;

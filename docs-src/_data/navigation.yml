@@ -1,0 +1,18 @@
+# did info links
+
+download:
+  - title: "Reports (ZIP)"
+    url: /_pages/download/reports/
+  - title: "Images"
+    url: /_pages/download/images/
+  - title: "DataSets (ZIP)"
+    url: /_pages/download/datasets/
+
+# main links
+main:
+  - title: "Countries"
+    url: /_pages/countries/
+  - title: "Companies"
+    url: /_pages/companies/
+  - title: "Regulations"
+    url: /_pages/regulations/

@@ -41,6 +41,7 @@ jobs:
           git config user.name "${GITHUB_ACTOR}";
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com";
           mv jekyll-site/_site docs;
+          cp jekyll-site/_config.yml docs;
           git add docs;
           git commit -m "jekyll build from Action ${GITHUB_SHA}";
           git push --force $remote_repo setup:$remote_branch;

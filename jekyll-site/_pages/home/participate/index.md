@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Browse Data About Decentralized Identifiers
+title: Participate
 sidebar:
   nav: browse
 ---

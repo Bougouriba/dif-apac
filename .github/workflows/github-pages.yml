@@ -19,4 +19,5 @@ jobs:
             ${{ runner.os }}-gems-
       - uses: helaili/jekyll-action@2.0.1
         env:
+          INPUT_JEKYLL_SRC: 'docs-src'
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}

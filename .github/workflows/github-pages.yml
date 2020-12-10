@@ -17,10 +17,10 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - run: echo "we are here"; \
-          echo "This is another line"; \
-          ls -al; \
-          cd docs-src; \
+      - run: echo "we are here"
+          echo "This is another line";
+          ls -al;
+          cd docs-src;
           bundle install;
       - uses: helaili/jekyll-action@2.0.1
         env:

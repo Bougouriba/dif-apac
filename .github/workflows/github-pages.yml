@@ -22,7 +22,9 @@ jobs:
           ./update.sh;
           cd docs-src;
           bundle install;
+          echo "Installed!"; 
           bundle exec jekyll build;
+          echo "And all done!"; 
       - uses: helaili/jekyll-action@2.0.1
         env:
           INPUT_JEKYLL_SRC: 'docs-src'

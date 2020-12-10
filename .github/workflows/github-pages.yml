@@ -20,8 +20,11 @@ jobs:
       - run: echo "we are here"
           echo "This is another line";
           ls -al;
+          gem install csv2json json2yaml bundle;
+          ./update.sh;
           cd docs-src;
           bundle install;
+          bundle exec jekyll build;
       - uses: helaili/jekyll-action@2.0.1
         env:
           INPUT_JEKYLL_SRC: 'docs-src'

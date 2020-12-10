@@ -17,6 +17,9 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2' # Version range or exact version of a Ruby version to use, using semvers version range syntax.
       - run:
           sudo gem install csv2json json2yaml bundler;
           echo "Running Update!"; 
@@ -27,7 +30,3 @@ jobs:
           echo "Installed!"; 
           bundle exec jekyll build;
           echo "And all done!"; 
-      - uses: helaili/jekyll-action@2.0.1
-        env:
-          INPUT_JEKYLL_SRC: 'docs-src'
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}

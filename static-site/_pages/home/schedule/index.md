@@ -1,6 +1,11 @@
 ---
 layout: single
-title: Browse Data About Decentralized Identifiers
+title: Print out a Schedule
 sidebar:
-  nav: browse
+  title: Home
+  nav: home
 ---
+{% assign schedule = site.data.Schedule | sort: 'Name' %}
+{% for event in schedule %}
+  * {{ event.Name }}
+{% endfor %}

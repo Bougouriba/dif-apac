@@ -2,5 +2,6 @@
 layout: single
 title: Participate
 sidebar:
-  nav: browse
+  title: Home
+  nav: home
 ---

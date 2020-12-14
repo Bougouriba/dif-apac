@@ -1,5 +1,14 @@
 # did info links
 
+community:
+  - title: Raw Assets
+    text: Text for Raw Assets
+    image: /assets/images/Leaf1.png
+  - title: Events
+    text: Text for Events
+  - title: By Name
+    text: Text for By Name
+
 countries:
   - title: By Region
     text: Text for By Region
@@ -20,7 +29,7 @@ home:
 # main links
 main:
   - title: "Countries"
-    url: /_pages/country
+    url: /_pages/countries/
   - title: "Companies"
     url: /_pages/companies/
   - title: "Community"

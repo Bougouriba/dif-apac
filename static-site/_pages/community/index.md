@@ -1,6 +1,6 @@
 ---
-layout: single
-title: Regulations
+layout: archive # section?
+title: Community
 sidebar:
-  nav: regulations
+  nav: community
 ---

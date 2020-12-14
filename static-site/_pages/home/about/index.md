@@ -1,6 +1,9 @@
 ---
 layout: single
-title: Browse Data About Decentralized Identifiers
+title: About or group
 sidebar:
-  nav: browse
+  title: Home
+  nav: home
 ---
+Link to Notion
+Link to about

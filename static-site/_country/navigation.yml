@@ -1,5 +1,14 @@
 # did info links
 
+countries:
+  - title: By Region
+    text: Text for By Region
+    image: /assets/images/Leaf1.png
+  - title: By Population
+    text: Text for By Population
+  - title: By Name
+    text: Text for By Name
+
 home:
   - title: "About"
     url: /_pages/home/about/
@@ -14,5 +23,5 @@ main:
     url: /_pages/countries/
   - title: "Companies"
     url: /_pages/companies/
-  - title: "Regulations"
-    url: /_pages/regulations/
+  - title: "Community"
+    url: /_pages/community/

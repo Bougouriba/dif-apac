@@ -1,0 +1,27 @@
+# did info links
+
+countries:
+  - title: By Region
+    text: Text for By Region
+    image: /assets/images/Leaf1.png
+  - title: By Population
+    text: Text for By Population
+  - title: By Name
+    text: Text for By Name
+
+home:
+  - title: "About"
+    url: /_pages/home/about/
+  - title: "Meeting Schedule"
+    url: /_pages/home/schedule/
+  - title: "Participate"
+    url: /_pages/home/participate/
+
+# main links
+main:
+  - title: "Countries"
+    url: /_pages/country
+  - title: "Companies"
+    url: /_pages/companies/
+  - title: "Community"
+    url: /_pages/community/

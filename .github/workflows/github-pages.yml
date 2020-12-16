@@ -23,7 +23,7 @@ jobs:
       - run:
           sudo gem install bundler;
           echo "Running Update!";
-          #./update.sh;
+          echo "SKIP: ./update.sh";
           echo "Done Running Update!";
           cd static-site;
           bundle install;

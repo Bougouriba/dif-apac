@@ -21,13 +21,13 @@ jobs:
         with:
           ruby-version: '2.7.2' # Version range or exact version of a Ruby version to use, using semvers version range syntax.
       - run:
-          sudo gem install csv2json json2yaml bundler;
-          echo "Running Update!"; 
-          ./update.sh;
-          echo "Done Running Update!"; 
-          cd jekyll-site;
+          sudo gem install bundler;
+          echo "Running Update!";
+          #./update.sh;
+          echo "Done Running Update!";
+          cd static-site;
           bundle install;
-          echo "Installed!"; 
+          echo "Installed!";
           bundle exec jekyll build;
           echo "And all done!";
           cd ..;

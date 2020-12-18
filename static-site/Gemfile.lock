@@ -64,6 +64,9 @@ GEM
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     httpclient (2.8.3)
+    httplog (1.4.3)
+      rack (>= 1.0)
+      rainbow (>= 2.0.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jekyll (3.9.0)
@@ -108,6 +111,8 @@ GEM
     listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    macaddr (1.7.2)
+      systemu (~> 2.6.5)
     memoist (0.16.2)
     mercenary (0.3.6)
     mime-types (3.3.1)
@@ -131,6 +136,8 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
+    rack (2.2.3)
+    rainbow (3.0.0)
     rake (12.3.3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -157,10 +164,13 @@ GEM
       faraday (>= 0.17.3, < 2.0)
       jwt (>= 1.5, < 3.0)
       multi_json (~> 1.10)
+    systemu (2.6.5)
     thread_safe (0.3.6)
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
     uber (0.1.0)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -169,10 +179,12 @@ PLATFORMS
 DEPENDENCIES
   bundler
   google_drive
+  httplog
   kramdown-parser-gfm
   minimal-mistakes-jekyll!
   notion
   rake (= 12.3.3)
+  uuid (~> 2.3)
 
 BUNDLED WITH
    2.1.0.pre.1

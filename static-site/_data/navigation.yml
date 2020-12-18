@@ -21,10 +21,39 @@ countries:
 home:
   - title: "About"
     url: /_pages/home/about/
+    children:
+      - title: Zoom Info
+        url: /_pages/home/about/#zoom
+      - title: Meeting Format
+        url: /_pages/home/about/#meetings
+      - title: Related Links
+        url: /_pages/home/about/#links
+      - title: Giant Kumu Map
+        url: /_pages/home/about/#kumu
   - title: "Meeting Schedule"
     url: /_pages/home/schedule/
+    children:
+      - title: Propose A Topic
+        url: /_pages/home/schedule/#propose
   - title: "Participate"
     url: /_pages/home/participate/
+  - title: "Database"
+    url: /_pages/home/database/
+    children:
+      - title: Data Model
+        url: /_pages/home/database/#zoom
+
+database:
+  - title: Data Model
+    children:
+      - title: Country
+      - title: Company
+      - title: NGO
+      - title: Government
+      - title: Projects
+      - title: Contact
+      - title: Regulation
+      - title: Resource
 
 # main links
 main:

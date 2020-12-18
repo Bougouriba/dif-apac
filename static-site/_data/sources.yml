@@ -1,0 +1,25 @@
+---
+google:
+- name: DIF Asia - Afghanistan
+  link: https://docs.google.com/spreadsheets/d/1Tzw-rAjPtDUIu7gDcz8oRik7uMzYvDEqe741U-oEf6Q
+  id: 1Tzw-rAjPtDUIu7gDcz8oRik7uMzYvDEqe741U-oEf6Q
+- name: DIF Asia - All
+  link: https://docs.google.com/spreadsheets/d/1_XOu02TuF2rh4AndNjm1qXfiwjS4QBs-KGejEQ9acNY
+  id: 1_XOu02TuF2rh4AndNjm1qXfiwjS4QBs-KGejEQ9acNY
+notion:
+  raw:
+    schedule:
+      guid: 1b088f2c46f54050be7f1a4f7edbc226
+      processed: '2020-12-17'
+  auth:
+    token_v2: 64368b934f51c76fa5cbf6d98f186bddb4c2270e811f9d1dc35abf075a94f0647ccbbf3cf2acba2fb3215f06512194fcd0f46852657883a97b0670794508c6457b953a9929ce9aae2ef82606df94
+  databases:
+    countries: 6774b695d6bf45748b9491af6f85d150
+  x:
+    c: 70e4c182-f2b7-4c15-af86-07bcb1949209
+    countries: https://www.notion.so/6774b695d6bf45748b9491af6f85d150?v=db3c4bd9898f42a89dbe5d0d3b8ca395
+    companies: https://www.notion.so/5efadf0a74e74c6192abb76e800252d8?v=ce2299e9e0884c4ebae250c2104834ce
+
+schedule:
+  name: Schedule
+  guid: 1b088f2c46f54050be7f1a4f7edbc226

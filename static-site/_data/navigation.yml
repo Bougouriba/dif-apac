@@ -1,65 +1,45 @@
 # did info links
 
-community:
-  - title: Raw Assets
-    text: Text for Raw Assets
-    image: /assets/images/Leaf1.png
-  - title: Events
-    text: Text for Events
-  - title: By Name
-    text: Text for By Name
-
-countries:
-  - title: By Region
-    text: Text for By Region
-    image: /assets/images/Leaf1.png
-  - title: By Population
-    text: Text for By Population
-  - title: By Name
-    text: Text for By Name
 
 home:
-  - title: "About"
-    url: /_pages/home/about/
-    children:
-      - title: Zoom Info
-        url: /_pages/home/about/#zoom
-      - title: Meeting Format
-        url: /_pages/home/about/#meetings
-      - title: Related Links
-        url: /_pages/home/about/#links
-      - title: Giant Kumu Map
-        url: /_pages/home/about/#kumu
+  - title: Zoom Info
+    url: /_pages/about#zoom
+  - title: Meeting Format
+    url: /_pages/about#meetings
+  - title: Propose A Topic
+    url: /_pages/about/#propose
   - title: "Meeting Schedule"
-    url: /_pages/home/schedule/
-    children:
-      - title: Propose A Topic
-        url: /_pages/home/schedule/#propose
+    url: /_pages/schedule
+  - title: Related Links
+    url: /_pages/about#links
   - title: "Participate"
-    url: /_pages/home/participate/
+    url: /_pages/about#participate
+  - title: "Projects"
+    url: /_pages/projects
+    children:
+      - title: Professional Directory
+        url: /_pages/projects#professional-directory
+      - title: The Kenya Challenge
+        url: /_pages/projects#the-keyna-challenge
+      - title: Regulatory Directory
+        url: /_pages/projects#regulatory-directory
   - title: "Database"
-    url: /_pages/home/database/
+    url: /_pages/database/
     children:
+      - title: Countries
+        url: /_pages/database/countries
+      - title: Companies
+        url: /_pages/database/companies
+      - title: Giant Kumu Map
+        url: /_pages/database#kumu
       - title: Data Model
-        url: /_pages/home/database/#zoom
-
-database:
-  - title: Data Model
-    children:
-      - title: Country
-      - title: Company
-      - title: NGO
-      - title: Government
-      - title: Projects
-      - title: Contact
-      - title: Regulation
-      - title: Resource
+        url: /_pages/database#model
 
 # main links
 main:
   - title: "Countries"
-    url: /_pages/countries/
+    url: /_pages/database/countries/
   - title: "Companies"
-    url: /_pages/companies/
+    url: /_pages/database/companies/
   - title: "Community"
-    url: /_pages/community/
+    url: /_pages/about#community

@@ -1,7 +1,7 @@
 ---
 title: Countries
 layout: collection
-permalink: /country/
+permalink: /database/country/
 collection: country
 entries_layout: grid
 classes: wide

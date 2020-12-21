@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Countries
+sidebar:
+  nav: home
 classes: wide
 ---
 {% assign country_pages = site.country | sort: 'title' %}
@@ -29,4 +31,4 @@ information via github.
 {% endfor %}
 
 ## Kumu
-<iframe src="https://embed.kumu.io/3acd9c750afde2aec00498f5c999f950" width="940" height="600" frameborder="0"></iframe> 
+<iframe src="https://embed.kumu.io/3acd9c750afde2aec00498f5c999f950" width="940" height="600" frameborder="0"></iframe>

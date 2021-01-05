@@ -5,17 +5,17 @@ sidebar:
   nav: home
 classes: wide
 ---
-{% assign country_pages = site.country | sort: 'title' %}
-{% assign country_list = site.data.Countries | sort: 'Name' %}
-Below, please find per-country pages, and per-country data sheets.
+{% assign company_pages = site.company | sort: 'title' %}
+{% assign company_list = site.data.Companies | sort: 'Name' %}
+Below, please find per-company pages, and per-company data sheets.
 
 ## Profile Pages
 <a href="/">how to add a profile page</a>
 
-{% for country in country_pages %} <a href="/country/{{ country.country.key | relative_url }}">{{ country.title }}</a> {% endfor %}
+{% for company in company_pages %} <a href="/company/{{ company.company.key | relative_url }}">{{ company.title }}</a> {% endfor %}
 
 ## Data Sheet
-{% for country in country_list %} <a href="{{ country.link | relative_url }}">{{ country.Name | lowercase }}</a> {% endfor %}
+{% for company in company_list %} <a href="{{ company.link | relative_url }}">{{ company.Name | lowercase }}</a> {% endfor %}
 
 ## Tell the community about something
 Add a URL or make a note - we'll integrate this information into the web site.
@@ -27,7 +27,7 @@ information via github.
 
 | Priority apples | Second priority | Third priority |
 |-------|--------|---------|
-{% for country in country_list %}| {{ country.Name }} | {{ country.Name | strip_guid }} | {{ country.Name }} |
+{% for company in company_list %}| {{ company.Name }} | {{ company.Name | strip_guid }} | {{ company.Name }} |
 {% endfor %}
 
 ## Kumu

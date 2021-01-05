@@ -1,19 +1,29 @@
-class ScheduleEntry
+require_relative './database.rb'
+
+class ScheduleEntry < AbstractEntry
+  def initialize(yaml)
+    fields = {
+      "Guid" => 'guid',
+      'Name' => 'name',
+      'Notion Link' => 'agenda',
+      'Business' => 'business',
+      'Country Spotlight' => 'country',
+      'Events' => 'events',
+      'Legal' => 'legal',
+      'Responsibility':"responsibility",
+      'Social' => 'social',
+      'When' => 'when'
+    }
+    super(yaml,fields)
+  end
+
+  attr_accessor :guid, :name, :business, :country, :events, :legal, :responsibility, :social, :when, :agenda
+
+end
+
+class ScheduleEntry2
   def initialize(yaml)
     @hashes = [ yaml ]
-
-    @guid = yaml['Guid']
-    @name = yaml['Name']
-    @business = yaml['Business']
-    @country = yaml['Country Spotlight']
-    @agenda = yaml['Notion Link']
-    @events = yaml['Events']
-    @legal = yaml['Legal']
-    @who = yaml['Responsibility']
-    @social = yaml['Social']
-    @when = yaml['When']
-
-    self.map_back()
     @fields = {
       "Guid" => 'guid',
       'Name' => 'name',
@@ -26,9 +36,10 @@ class ScheduleEntry
       'Social' => 'social',
       'When' => 'when'
     }
+    self.map_hash_into_self(yaml)
   end
 
-  attr_reader :guid, :name, :business, :country, :events, :legal, :who, :social, :when, :hashes
+  attr_accessor :guid, :name, :business, :country, :events, :legal, :responsibility, :social, :when, :hashes, :agenda
 
   def [](key)
     result = @hashes[0][key]
@@ -39,34 +50,22 @@ class ScheduleEntry
     @hashes.each do |hash|
       hash[key]=value
     end
-    self.map_into(@hashes[0])
+    self.map_hash_into_self(@hashes[0])
   end
 
-  def map_into(hash)
-    @guid = hash['Guid']
-    @name = hash['Name']
-    @business = hash['Business']
-    @country = hash['Country Spotlight']
-    @agenda = hash['Notion Link']
-    @events = hash['Events']
-    @legal = hash['Legal']
-    @who = hash['Responsibility']
-    @social = hash['Social']
-    @when = hash['When']
+  def map_hash_into_self(hash)
+    @fields.each do |key,prop_name|
+      self.send("#{prop_name}=",hash[key])
+    end
+    #self.instance_variable_set(prop_name, value)
+
   end
 
   def map_back()
     @hashes.each do |hash|
-      hash['Guid'] = @guid
-      hash['Name'] = @name
-      hash['Notion Link'] = @agenda
-      hash['Business'] = @business
-      hash['Country Spotlight'] = @country
-      hash['Events'] = @events
-      hash['Legal'] = @legal
-      hash['Responsibility'] = @who
-      hash['Social'] = @social
-      hash['When'] = @when
+      @fields.each do |key,prop_name|
+        @hash[key] = self.get_attribute_by_name(prop_name)
+      end
     end
   end
 
@@ -94,7 +93,7 @@ class ScheduleEntry
       end
     end
     self.hashes << another.hashes
-    self.map_into(self.hashes[0])
+    self.map_hash_into_self(self.hashes[0])
     #raise "damn it"
   end
   def matches?(another)

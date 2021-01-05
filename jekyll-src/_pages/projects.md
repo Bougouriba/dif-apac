@@ -21,15 +21,9 @@ This is a list of contact points for companies and other organizations.  All
 information in this directory should be publicly available so that public
 replication here, as a public information resource, is absolutely ok.
 
-* [List of Companies](/_pages/database/companies/)
-* [List of Projects](/_pages/database/projects/)
-* [List of Standards](/_pages/database/standards/)
-
-* DIF Information Assets
-* GSMI Information Assets
-* Other Maps/Assets
-
 This is a simple inventory of organizations, urls, that is searchable and tagged.
+
+* [List of Companies](/_pages/companies/)
 
 ## The Keyna Challenge
 

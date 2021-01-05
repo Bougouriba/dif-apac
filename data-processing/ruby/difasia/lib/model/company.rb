@@ -1,4 +1,4 @@
-class Country
+class Company
 
   def self.new_from_link(link)
     /(?<prefix>https:\/\/www.notion.so\/?)(?<name>.*)-(?<guid>[0-9a-fA-F]*)/ =~ link

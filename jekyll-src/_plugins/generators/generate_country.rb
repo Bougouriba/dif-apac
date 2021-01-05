@@ -1,32 +1,32 @@
 module Jekyll
-  class ZorkPageGenerator < Generator
+  class CountryPageGenerator < Generator
     safe true
 
     def generate(site)
-      if site.layouts.key? 'zork_index'
-        dir = site.config['zork_dir'] || 'zork'
-        site.data['zork'].each do |zork|
-          name = Jekyll::Utils.slugify(zork['name'])
-          site.pages << ZorkPage.new(site, site.source, File.join(dir, name), zork)
+      if site.layouts.key? 'country_index'
+        dir = site.config['country_dir'] || 'country'
+        site.data['country'].each do |country|
+          name = Jekyll::Utils.slugify(country['name'])
+          site.pages << CountryPage.new(site, site.source, File.join(dir, name), country)
         end
       end
     end
   end
 
-  # A Page subclass used in the `ZorkPageGenerator`
-  class ZorkPage < Page
-    def initialize(site, base, dir, zork)
+  # A Page subclass used in the `CountryPageGenerator`
+  class CountryPage < Page
+    def initialize(site, base, dir, country)
       @site = site
       @base = base
       @dir  = dir
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'zork_index.html')
-      self.data['zork'] = zork
+      self.read_yaml(File.join(base, '_layouts'), 'country_index.html')
+      self.data['country'] = country
 
-      zork_title_prefix = site.config['zork_title_prefix'] || 'Zork: '
-      self.data['title'] = "#{zork_title_prefix}#{zork['name']}"
+      country_title_prefix = site.config['country_title_prefix'] || 'Country: '
+      self.data['title'] = "#{country_title_prefix}#{country['name']}"
     end
   end
 end

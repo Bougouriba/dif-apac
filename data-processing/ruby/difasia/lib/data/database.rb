@@ -14,6 +14,7 @@ class Database
     self.load_notion_into_guid_map(entity)
     self.rectify_no_guids()
     #self.yaml.save()
+    puts "I DID IT"
   end
 
   attr_reader :yaml, :notion, :no_guids
